@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    {% include 'snippets/_legend.html' %}
+
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4">January</h1>
+        </div>
+    </div>
+
+    {% autoescape off %}{{ calendar }}{% endautoescape %}
+
+{% endblock %}
